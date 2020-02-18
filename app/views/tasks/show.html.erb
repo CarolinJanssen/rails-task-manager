@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	
+<h1> <%= @task.title %> </h1>
+<p> <%= @task.details %> </p>
+<p> <% if @task.completed == true  %>
+	<i class="far fa-check-square"></i> This task is completed </p>
+<p> <% else  %> 
+	<i class="far fa-square"></i> This task is not completed yet </p>
+<% end %>
+
+<br>
+
+<%= link_to "Back to list", tasks_path %>
+</body>
